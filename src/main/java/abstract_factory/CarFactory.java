@@ -5,7 +5,7 @@ public class CarFactory extends VehicleFactory {
     public Vehicle create(VehicleSize size) {
         return switch (size) {
             case SMALL -> new SportCar();
-            case LARGE ->  new SedanCar();
+            case LARGE ->  new Sedan();
         };
     }
 }
